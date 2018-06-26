@@ -2,49 +2,46 @@
 
 ## Install JupyterLab and JupyterHub with a bunch of additional languages
 
-### run <python -c 'import lang; lang.python3_base()'>
+example: *replace <python3_base> with the other function names
 
+	run <python -c 'import lang; lang.python3_base()'>
 
-#### replace <python3_base> with the other function names
+	jupyter_lab()
 
-jupyter_lab()
+	python3_base()
 
-python3_base()
+	jupyter_hub()
 
-jupyter_hub()
+	c()
 
-c()
+	ruby()
 
-ruby()
+	cpp()
 
-cpp()
+	bash()
 
-bash()
-
-
-#### <python3 install.py> to install jupyter-lab and all above languages 
-
+####  to install jupyter-lab and all above languages 
+	<python2 install.py>
 ## System Service Installation
 
 #### save jupyterlab.service at 
 
-/usr/lib/systemd/system/jupyterlab.service
+	/usr/lib/systemd/system/jupyterlab.service
 
 
 #### Enable service 
 
-sudo systemctl enable jupyter.service
+	sudo systemctl enable jupyterlab.service
 
 #### Reload services
 
-sudo systemctl daemon-reload
+	sudo systemctl daemon-reload
 
 #### Restart JupyterLab
 
-sudo systemctl start jupyterlab.service
+	sudo systemctl restart jupyterlab.service
 
 #### Check Status of JupyterLab
 
-sudo systemctl start jupyterlab.service
-
+	sudo systemctl status jupyterlab.service
 
