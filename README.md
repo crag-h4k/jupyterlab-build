@@ -2,9 +2,8 @@
 
 ## Install JupyterLab and JupyterHub with a bunch of additional languages
 
-example: *replace <python3_base> with the other function names
-
-	run <python -c 'import lang; lang.python3_base()'>
+example: 
+	python -c 'import lang; lang.python3_base()' #replace <python3_base> with the other function names
 
 	jupyter_lab()
 
