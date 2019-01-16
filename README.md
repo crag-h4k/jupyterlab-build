@@ -86,6 +86,16 @@
     conda install -c conda-forge jupyter_nbextensions_configurator
 
 
-### Generate SSL certs
+## Generate SSL certs
 
     openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout jlcert.pem -out jlcert.pem
+
+## Systemd Service 
+
+    sudo cp jupyterlab.server /usr/lib/systemd/system/.
+    
+    sudo systemctl daemon-reload
+
+    sudo systemctl enable jupyterlab.service
+
+    sudo systemctl start jupyterlab.service
