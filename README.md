@@ -92,10 +92,10 @@
 
 ## Systemd Service 
 
-    sudo cp jupyterlab.server /usr/lib/systemd/system/.
+    sudo cp jupyterlab.server /usr/lib/systemd/user/.
     
-    sudo systemctl daemon-reload
+    sudo systemctl enable /usr/lib/systemd/user/jupyterlab.service
 
-    sudo systemctl enable jupyterlab.service
+    sudo systemctl daemon-reload
 
     sudo systemctl start jupyterlab.service
