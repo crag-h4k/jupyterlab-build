@@ -1,14 +1,14 @@
 [Unit]
-Description=Jupyter Notebook(miniconda3)
+Description=Jupyterlab (miniconda3)
 
 [Service]
 Type=simple
 PIDFile=/run/jupyter.pid
 
-ExecStart=/home/deadlift/miniconda3/bin/python /home/deadlift/miniconda3/bin/jupyter
-User=deadlift
-Group=deadlift
-WorkingDirectory=/home/deadlift/Projects
+ExecStart=/opt/miniconda3/bin/jupyter-lab
+User=csrl
+Group=csrl
+WorkingDirectory=/home/csrl/projects
 Restart=always
 RestartSec=10
 
