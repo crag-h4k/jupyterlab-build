@@ -1,3 +1,4 @@
+#### *for Debian GNU/Linux
 ## Install miniconda3
 
 #### When prompted install to /opt/miniconda3
@@ -10,9 +11,9 @@
 
     sudo conda install jupyterlab jupyterhub
 
-## C++ - must install first 
+## C++ !!!! must install first !!!
 
-    sudo conda install xeus-cling notebook -c QuantStack -c conda-forge
+    sudo conda install xeus-cling -c conda-forge
 
 ## C (gcc)
 
