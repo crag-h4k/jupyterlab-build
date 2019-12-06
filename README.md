@@ -7,7 +7,7 @@
 
     chmod ugo+w /opt/miniconda3
 
-## Install jupyter lab and hub
+## Install JupyterLab and hub
 
     sudo conda install jupyterlab jupyterhub
 
@@ -89,7 +89,7 @@
 
 ## Generate SSL certs
 
-    openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout jlcert.pem -out jlcert.pem
+    openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout jl.key -out jl.cert
 
 ## Systemd Service 
 
